@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  kuma:
+    image: 'louislam/uptime-kuma'
+    container_name: kuma
+    ports:
+      - "80:3001"
+    volumes:
+      - './kuma:/app/data'
+    restart: always
